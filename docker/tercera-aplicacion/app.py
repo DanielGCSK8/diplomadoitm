@@ -8,7 +8,7 @@ tabla = dynamodb.Table('tabla-danielgomez')
 
 @app.route('/insert', methods=['POST'])
 def index():
-  data = request.get_json()
+  data = request.json
   item = {**data}
   tabla.put_item(Item=item)
   return 'Registro guardado exitosamente'
