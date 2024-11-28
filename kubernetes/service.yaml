@@ -4,7 +4,7 @@ metadata:
   name: 1238938487-service
 spec:
   selector:
-    app: 1238938487
+    app: dgc-1238938487
   ports:
     - protocol: TCP
       port: 80
